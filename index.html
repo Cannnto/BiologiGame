@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiologiaGame</title>
+    <style>
+        *{  margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        body{
+            background-color: rgb(43, 41, 41);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        canvas{
+            border-radius: 1vw;
+            border: solid 0.5vw black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var canvas = document.createElement("canvas");
+        var ctx = canvas.getContext("2d");
+        document.body.appendChild(canvas);
+        canvas.width = 1800;
+        canvas.height = 900;
+    </script>
+    <script src="scripts/jumper/Rect.js"></script>
+    <script src="scripts/jumper/player.js"></script>
+    <script src="scripts/TurnBattle/Button.js"></script>
+    <script src="scripts/TurnBattle/TurnBattleCommon.js"></script>
+    <script src="scripts/jumper/settings.js"></script>
+    <script src="scripts/jumper/game.js"></script>
+    <script src="scripts/menu/loopMenu.js"></script>
+    <script src="scripts/menu/menuTrue.js"></script>
+    <script src="scripts/EndScreen.js/EndScreen.js"></script>
+
+    <script>
+
+    // var timer = setInterval(menu, 1000/30);
+    var timer = setInterval(Menu, 1000/30);
+
+    </script>
+</body>
+</html>
